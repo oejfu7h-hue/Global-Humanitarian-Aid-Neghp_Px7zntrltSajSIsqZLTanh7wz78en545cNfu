@@ -1,0 +1,28 @@
+[project]
+name = 'Global-Humanitarian-Aid-Ne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'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.aid-package-tracker]
+path = 'contracts/aid-package-tracker.clar'
+clarity_version = 3
+epoch = '3.2'
+
+[contracts.crisis-severity-assessment]
+path = 'contracts/crisis-severity-assessment.clar'
+clarity_version = 3
+epoch = 'latest'
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+[repl.remote_data]
+enabled = false
+api_url = 'https://api.hiro.so'
